@@ -11,5 +11,5 @@ functions for survival analysis.
 In survival analysis, we view survival time T as a random variable, and we use
 the following four functions to describe it.
 
-cumulative distribution function: $F(t) = P(T < t)$
-probability density function: $\def$
+cumulative distribution function: $$F(t) = P(T < t)$$
+probability density function: $$\def$$
