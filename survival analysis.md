@@ -53,3 +53,25 @@ $$S(t) = e^{-\lambda t^p}$$
 $$h(t)=\lambda p t^{p-1}$$
 
 $$H(t) = \lambda t^p$$
+
+
+
+## Commonly used survival models
+### AFT (accelerated failure time model)
+Basic idea:
+
+$$S_1(t) = S_0(\lambda t)$$
+
+A more general form
+
+$$lnT = x\beta + \epsilon$$
+
+$$\epsilon$$ is a random variable. The commonly used distribution for it includes Weibull and exponential.
+
+Prove that the genral form satisfies the basic idea:
+$$S(t) = P(T>t) = P(e^{x\beta}e^{\epsilon}>t) = p(Z>\frac{t}{e^{x\beta}}) = S_Z(\frac{t}{e^{x\beta}})$$
+
+$$Z = e^{\epsilon}$$
+
+Therefore 
+$$S_1(t) = S_Z(\frac{t}{e^{x_1\beta}}) = S_Z(\frac{t}{e^{x_0\beta}}\frac{e^{x_0\beta}}{e^{x_1\beta}})=S_0(\lambda t)$$
