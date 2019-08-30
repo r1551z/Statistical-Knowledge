@@ -1,7 +1,7 @@
 
 # 1. Cox PH model: likelihood, partial likelihood, etc.
 
-Cox’s Proportional Hazards Model[https://web.stanford.edu/~lutian/coursepdf/unitcox1.pdf]
+[Cox’s Proportional Hazards Model](https://web.stanford.edu/~lutian/coursepdf/unitcox1.pdf)
 
 # 2. Survival model evaluation methodologies
 ## 1. 
