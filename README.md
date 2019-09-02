@@ -1,2 +1,2 @@
 # Statistical-Knowledge
-ML related statistical knowledge
+ML/inference related statistical knowledge
