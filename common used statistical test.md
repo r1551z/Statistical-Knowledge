@@ -24,10 +24,12 @@ It includes the following steps:
 ### population meadian vs hypothesized 
 1. **one-sample Sign test**: shift your data so its median is $0$; then test if $p(x > 0)$ is > or < 0.5.
 2. **Wilcoxon Signed Rank Test**: you need to have a **symmetric data** to apply this method. 
-
-
       
 ### population mean vs a different population mean
+1. if you have paired samples, meaning your two samples are **dependent**, you can obtain the 
+difference between each pair, then perform suitable one sample test based on the nature of your data.
+
+2. if you have independent samples, you can choose to run a. **two sample z test** if you have large samples; b. **welch t test** if you cannot assume equal variance and roughly normal samples; c **pooled t test** if you can assume equal variance and roughly normal samples; d. **Mann Whitney U Test (Wilcoxon Rank Sum Test)**, if your samples are not normally distributed, but of same shape. Notice that here you null assumption is that **The two populations are equal**
 
 # General
 ## Likelihood ratio test.
