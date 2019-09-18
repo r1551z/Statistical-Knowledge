@@ -51,10 +51,23 @@ No censoring methodology is specifically mentioned in the paper.
 An idea: we can also combine the deepsurv result with the AFT model to resolve the issue of too much feature processing time required by
 traditional linear regression.
 
-## RNN surve
+## RNN surv
 http://medianetlab.ee.ucla.edu/papers/RNN_SURV.pdf
 (RNN-SURV: a Deep Recurrent Model for
 Survival Analysis 2018)
 "At each time step, the network takes as input the features characterizing the patient
 and the identifier of the time step, creates an embedding, and outputs
 the value of the survival function in that time step".
+
+The rnn structure is as follows: maximum observed time is sliced into K intervals; then at each enpoint, inputs are the patients'
+characteristic features (meaning they are the same at each time point) and the time interval identifier k (1 - K). The inputs will be firstly put through embedding layers, to create more meaningful representation, then through 2 lstm to create \hat{y} at each time point.
+Each \hat{y} at the previous time point will be used to calculate the next \hat{y} due to the structure of rnn. A final output risk
+score is a weighted average of the k \hat{y}s.
+
+## RNN weibull AFT
+https://ragulpr.github.io/assets/draft_master_thesis_martinsson_egil_wtte_rnn_2016.pdf 
+(WTTE-RNN : Weibull Time To Event, Recurrent Neural Network, 2016, a master thesis).
+Corresponding implementation can be found here https://github.com/ragulpr/wtte-rnn
+(a keras implementation) and here https://github.com/ragulpr/wtte-rnn.
+A simpler illustration of the idea can be fund here https://github.com/daynebatten/keras-wtte-rnn
+
