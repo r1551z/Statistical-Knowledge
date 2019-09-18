@@ -15,6 +15,7 @@ Below are some methods we are interested in.
 ## logistic regressors
 http://www.cs.cornell.edu/~cnyu/papers/nips11_survival.pdf
 (Learning Patient-Specific Cancer Survival Distributions as a Sequence of Dependent Regressors 2011)
+It proposed a multi-task logistic regression (MTLR) method to estimate p(T>t_j|X) at each given time point; the time point could be 1-60 month, 1-10 year, etc. Method force the logistic regressors to be dependent. It targets the accuracy of predicted time.
 
 ## Randome survival forest
 https://arxiv.org/pdf/0811.1645.pdf 
