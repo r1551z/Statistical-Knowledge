@@ -10,6 +10,10 @@ increasing usage of enormous data, we would like to see how the nn / dl method c
 
 Below are some methods we are interested in.
 
+# logistic regressors
+http://medianetlab.ee.ucla.edu/papers/RNN_SURV.pdf
+(Learning Patient-Specific Cancer Survival Distributions as a Sequence of Dependent Regressors 2011)
+
 # Randome survival forest
 https://arxiv.org/pdf/0811.1645.pdf (randome survival forest 2008)
 Python implementation can be found here https://pypi.org/project/random-survival-forest/.
@@ -27,7 +31,9 @@ This method according to the author, focus more on the risk score and effectiven
 http://mucmd.org/CameraReadySubmissions/37%5CCameraReadySubmission%5CPFS_TTRNN_AFT_CameraReady.pdf (Modeling Progression Free Survival in Breast Cancer with Tensorized Recurrent Neural Networks and Accelerated Failure Time Models , 2017)
 An rnn is built to deal with the high dimensionl & sparse sequential clinical data and to extract a latent representation from the entire patient history. An AFT model is then built on top on it to predict the survival time. 
 
-In the paper, the target is time t, the 
+In the paper, both the rnn models and the aft models are trained with mean squared logarithmic eror and use mean absolute error for metrics. The last latent state of the rnn model (a vector) is chosen as an imput of the AFT model.
+
+No censoring methodology is specifically mentioned in the paper.
 
 An idea: we can also combine the deepsurv result with the AFT model to resolve the issue of too much feature processing time required by
 traditional linear regression.
