@@ -11,7 +11,7 @@ increasing usage of enormous data, we would like to see how the nn / dl method c
 Below are some methods we are interested in.
 
 # logistic regressors
-http://medianetlab.ee.ucla.edu/papers/RNN_SURV.pdf
+http://www.cs.cornell.edu/~cnyu/papers/nips11_survival.pdf
 (Learning Patient-Specific Cancer Survival Distributions as a Sequence of Dependent Regressors 2011)
 
 # Randome survival forest
