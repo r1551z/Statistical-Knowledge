@@ -28,7 +28,8 @@ This is a combination of Cox PH model and deep learning. The implementation can 
 This method according to the author, focus more on the risk score and effectiveness for patients recommendation systems.
 
 # RNN & AFT
-http://mucmd.org/CameraReadySubmissions/37%5CCameraReadySubmission%5CPFS_TTRNN_AFT_CameraReady.pdf (Modeling Progression Free Survival in Breast Cancer with Tensorized Recurrent Neural Networks and Accelerated Failure Time Models , 2017)
+http://medianetlab.ee.ucla.edu/papers/RNN_SURV.pdf 
+(Modeling Progression Free Survival in Breast Cancer with Tensorized Recurrent Neural Networks and Accelerated Failure Time Models , 2017)
 An rnn is built to deal with the high dimensionl & sparse sequential clinical data and to extract a latent representation from the entire patient history. An AFT model is then built on top on it to predict the survival time. 
 
 In the paper, both the rnn models and the aft models are trained with mean squared logarithmic eror and use mean absolute error for metrics. The last latent state of the rnn model (a vector) is chosen as an imput of the AFT model.
