@@ -68,6 +68,8 @@ score is a weighted average of the k \hat{y}s.
 https://ragulpr.github.io/assets/draft_master_thesis_martinsson_egil_wtte_rnn_2016.pdf 
 (WTTE-RNN : Weibull Time To Event, Recurrent Neural Network, 2016, a master thesis).
 Corresponding implementation can be found here https://github.com/ragulpr/wtte-rnn
-(a keras implementation) and here https://github.com/ragulpr/wtte-rnn.
+(a keras implementation) and here https://github.com/ragulpr/wtte-rnn 
+(installation is here https://github.com/ragulpr/wtte-rnn/blob/master/python/README.md
+).
 A simpler illustration of the idea can be fund here https://github.com/daynebatten/keras-wtte-rnn
 
