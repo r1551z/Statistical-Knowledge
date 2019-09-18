@@ -15,20 +15,22 @@ http://medianetlab.ee.ucla.edu/papers/RNN_SURV.pdf
 (Learning Patient-Specific Cancer Survival Distributions as a Sequence of Dependent Regressors 2011)
 
 # Randome survival forest
-https://arxiv.org/pdf/0811.1645.pdf (randome survival forest 2008)
+https://arxiv.org/pdf/0811.1645.pdf 
+(randome survival forest 2008)
 Python implementation can be found here https://pypi.org/project/random-survival-forest/.
 
 Notice that the prediction is the author defined motality.
 
 
 # DeepSurv 
-https://arxiv.org/abs/1606.00931 (2017)
+https://arxiv.org/abs/1606.00931 
+(2017)
 This is a combination of Cox PH model and deep learning. The implementation can be found https://github.com/jaredleekatzman/DeepSurv (with Theano),  https://github.com/alexhallam/TensorFlow-Survival-Analysis/blob/master/deepsurv_tf.py and https://github.com/liupei101/TFDeepSurv (with tensorflow).
 
 This method according to the author, focus more on the risk score and effectiveness for patients recommendation systems.
 
 # RNN & AFT
-http://medianetlab.ee.ucla.edu/papers/RNN_SURV.pdf 
+http://mucmd.org/CameraReadySubmissions/37%5CCameraReadySubmission%5CPFS_TTRNN_AFT_CameraReady.pdf
 (Modeling Progression Free Survival in Breast Cancer with Tensorized Recurrent Neural Networks and Accelerated Failure Time Models , 2017)
 An rnn is built to deal with the high dimensionl & sparse sequential clinical data and to extract a latent representation from the entire patient history. An AFT model is then built on top on it to predict the survival time. 
 
@@ -40,7 +42,8 @@ An idea: we can also combine the deepsurv result with the AFT model to resolve t
 traditional linear regression.
 
 # RNN surve
-http://medianetlab.ee.ucla.edu/papers/RNN_SURV.pdf(RNN-SURV: a Deep Recurrent Model for
+http://medianetlab.ee.ucla.edu/papers/RNN_SURV.pdf
+(RNN-SURV: a Deep Recurrent Model for
 Survival Analysis 2018)
 "At each time step, the network takes as input the features characterizing the patient
 and the identifier of the time step, creates an embedding, and outputs
