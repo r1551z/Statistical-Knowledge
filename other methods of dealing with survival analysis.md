@@ -31,6 +31,16 @@ http://www.gatsby.ucl.ac.uk/~chuwei/paper/ccls-07-03.pdf
 This paper used a modified svm (SVCR) as the loss function instead of a tradtitional parametric likelihood function. The thing is that
 it performs very well on the loss it is trained on, but not so on other losses.
 
+## Adversarial time to event
+http://people.ee.duke.edu/~lcarin/Ash_ICML18.pdf
+(Adversarial Time-to-Event Modeling, 2018)
+Deep learning approach leveraging adversarial learning (GAN, generative adversarial network); forcus more on the time to 
+event distribution rather than ordering.
+
+related tensorflow code can be found here in https://github.com/paidamoyo/adversarial_time_to_event
+.
+
+
 # DL related
 ## DeepSurv 
 https://arxiv.org/abs/1606.00931 
