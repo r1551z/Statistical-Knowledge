@@ -31,6 +31,22 @@ difference between each pair, then perform suitable one sample test based on the
 
 2. if you have independent samples, you can choose to run a. **two sample z test** if you have large samples; b. **welch t test** if you cannot assume equal variance and roughly normal samples; c **pooled t test** if you can assume equal variance and roughly normal samples; d. **Mann Whitney U Test (Wilcoxon Rank Sum Test)**, if your samples are not normally distributed, but of same shape. Notice that here you null assumption is that **The two populations are equal**
 
+
+## population proportion
+
+### large samples 
+z test for population proportion
+
+## small samples
+binomial exact test: calculate p-value directly from the binomial distribution under null, without
+normal approximation.
+
+two tails: 
+
+a. method 1 is to calculate all p(y) such that abs(y-e(X)) <= abs(x-E(X))
+
+b. method 2 is to sum all p(y), such that p(y)<=p(x), where x is the observed value
+
 # Probability distribution tests
 
 ## Shapiro -Wilk test (best power if used properly)
@@ -38,8 +54,21 @@ difference between each pair, then perform suitable one sample test based on the
 ## Kolmogorov–Smirnov test (known mean and variance; can also be used for non-normal distrbution tests)
 
 ## pearson chi-square test (discrete cases)
+see the section for pearson chi-square test
 
 # test for r by c table - homogeneity / independence
+
+## large sample
+Pearson chi-square test
+
+## small sample
+fisher exact test
+
+one tail: sum of prob of cases as or more extreme to the observed case
+
+two tails: sum of prob of cases as or more extreme to the observed cases in both 
+direction; one method is to deem more extreme as any cases with a lower probability
+comparing with current observed case
 
 
 # Pearson chi-square test usage
@@ -72,7 +101,18 @@ in the rows and columns.
 
 # Modeling / Regression related
 
+## test for single coefficient: t test; 
+t = \frac{\hat(\beta)}{se(\hat(beta)}, df=n-p-1
 
+## test for overall relationship.
+
+t = SSR/SSE, F test, df = p, n-p-1
+
+## test for multiple beta 
+
+\frac{(SSE_{reduce} - SSE_{full}) / (p-q)}{SSE_{full}/(n-p-1} ~ F test;
+
+**null hypothesis is reduced model is true**
 
 
 # General
