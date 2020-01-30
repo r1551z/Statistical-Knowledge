@@ -47,6 +47,18 @@ For peason chi-square test, the test statistics, in gneneral, is
 
 $\sum \frac{ (O- E) ^2}{ E^2}$
 
+where O being observed freq in a cell / category, and E being the expected one. The difference is that
+
+a. for goodness of fit, we have one way table, with E_i calculated as n * p_i
+
+b. for independence and homogeity, we have two way contigency table, with E = p_{\dot j} p_{i \dot} * n
+
+where i, j represents levels of the two ways, p_{\dot j} = \frac{\sum _ i(n_{i, j}}{n},
+p_{i \dot} = \frac{\sum _ j(n_{i, j}}{n}
+
+
+
+
 # Modeling / Regression related
 
 
