@@ -43,18 +43,29 @@ difference between each pair, then perform suitable one sample test based on the
 
 
 # Pearson chi-square test usage
+
+## assumptions
+
+a. random sampling
+
+b. independent obs
+
+c. sample large enough 
+
+## test stats
 For peason chi-square test, the test statistics, in gneneral, is 
 
 $\sum \frac{ (O- E) ^2}{ E^2}$
 
 where O being observed freq in a cell / category, and E being the expected one. The difference is that
 
-a. for goodness of fit, we have one way table, with E_i calculated as n * p_i
+a. for goodness of fit, we have one way table, with E_i calculated as n * p_i; df will be n - p;
 
 b. for independence and homogeity, we have two way contigency table, with E = p_{\dot j} p_{i \dot} * n
 
 where i, j represents levels of the two ways, p_{\dot j} = \frac{\sum _ i(n_{i, j}}{n},
-p_{i \dot} = \frac{\sum _ j(n_{i, j}}{n}
+p_{i \dot} = \frac{\sum _ j(n_{i, j}}{n}; df = (r-1)(c-1), with r and c equal to n of categories
+in the rows and columns.
 
 
 
@@ -65,4 +76,8 @@ p_{i \dot} = \frac{\sum _ j(n_{i, j}}{n}
 
 
 # General
-## Likelihood ratio
+## Likelihood ratio test
+
+test stat: T = sup_theta(L|H0)/sup_{theta}L(J1) 
+
+rejection region: T < lambda
