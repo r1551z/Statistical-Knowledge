@@ -50,4 +50,9 @@ if Homoscedasticity & independence are satisfied, OLS estimate is the BLUE estim
 Gauss-Markov theorem.
 
 
+# Multicolinearity
+
+output will still be unbiased; however, it will give quite a bit variance, therefore, the beta hat
+will vary a lot, and sometimes you will observe reversed signs.
+
 
