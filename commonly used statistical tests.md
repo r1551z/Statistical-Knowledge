@@ -63,6 +63,7 @@ Pearson chi-square test
 
 ## small sample
 fisher exact test
+https://en.wikipedia.org/wiki/Fisher%27s_exact_test
 
 one tail: sum of prob of cases as or more extreme to the observed case
 
