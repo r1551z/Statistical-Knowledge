@@ -56,6 +56,16 @@ b. method 2 is to sum all p(y), such that p(y)<=p(x), where x is the observed va
 ## pearson chi-square test (discrete cases)
 see the section for pearson chi-square test
 
+## run test - test randomness
+
+## sign test - test sample median
+statisticshowto.com/one-sample-median-test/
+
+## mood's median test
+https://sixsigmastudyguide.com/moods-median-non-parametric-hypothesis-test/
+this is actually a pearson chi square test testing if method is related with prob(>pooled median)
+
+
 # test for r by c table - homogeneity / independence
 
 ## large sample
@@ -65,11 +75,16 @@ Pearson chi-square test
 fisher exact test
 https://en.wikipedia.org/wiki/Fisher%27s_exact_test
 
-one tail: sum of prob of cases as or more extreme to the observed case
-
 two tails: sum of prob of cases as or more extreme to the observed cases in both 
 direction; one method is to deem more extreme as any cases with a lower probability
 comparing with current observed case
+
+
+## wilcoxon singed ranks test
+
+https://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test
+
+
 
 
 # Pearson chi-square test usage
@@ -119,6 +134,15 @@ t = SSR/SSE, F test, df = p, n-p-1
 # General
 ## Likelihood ratio test
 
-test stat: T = sup_theta(L|H0)/sup_{theta}L(J1) 
+test stat: L = sup_theta(L|H0)/sup_{theta}L(J1) 
 
-rejection region: T < lambda
+rejection region: l < lambda
+
+Neyman-pearson: for simple test H0: theta = theta_0 vs H1: theta = theta1, likelihood ratio test is the most powerful test
+
+
+Kalin-Rubin theorem: if l = f(theta_1, x)/f(theta_0, x is monotonically non decreasing in x for any pair theta1 > theta0, then phi(x) = I(x>x0) would be is the ump test for H): theta<=theta_0 vs theta> theta_0
+
+importance case:  exponential family g(theta)h(x)exp(eta(theta)T(x)) is has mono-non-decreasing in sufficient stat T, thus mp test is T> t
+
+
