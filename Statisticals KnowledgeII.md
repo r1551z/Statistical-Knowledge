@@ -53,6 +53,14 @@ your effect size is then used as the mean between the highest and lowest groups.
 
 3. reservior sampling
 
+  used if total number of item in a population is not known or too large to be sampled at once
+  
+  procedure (sample k out of N):
+  ```
+  round N: 
+  get a random number from 1 to N; drop the Nth dp if the x>k; other wise use the Nth dp to replace the current x^th one 
+  ```
+
 4. respondent driven sampling
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4074320/#Sec2title
 
