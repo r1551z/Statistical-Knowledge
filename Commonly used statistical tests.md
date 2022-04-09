@@ -21,6 +21,7 @@ It includes the following steps:
 1. **Two idependent large sample mean comparison**: two sample z test; pooled or unpooled variance depending on whether the variances are equal.
 2. **Two independent normal population**: **student's t test** or **welch's** t test, depending on whether the two population has the same variance.
 3. **Two independent sample with distribution unknown**: **Mann Whitney test**. Notice this test requires the two population to be of **same shape**. 
+4. **Two dependent population**: paired t-test
 ### population meadian vs hypothesized 
 1. **one-sample Sign test**: shift your data so its median is $0$; then test if $p(x > 0)$ is > or < 0.5.
 2. **Wilcoxon Signed Rank Test**: you need to have a **symmetric data** to apply this method. 
