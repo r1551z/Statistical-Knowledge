@@ -99,3 +99,6 @@ on the other hand, lim(n to inf) B(k, n) = ramma(k, 1)
 if X ~ beta(alpha1/2, alpha2/2), then alpha2* X /( alpha1 (1-X)) ~ F(alpha1, alpha2)
 
 ### tweedie dist
+
+
+## hypergeometric
