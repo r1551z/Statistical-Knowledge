@@ -187,6 +187,17 @@ A is fixed and B is random: MSA/MSB(A); MSB(A)/MSE
 both random： MSA/MSB(A); MSB(A)/MSE
 
 
+# how to improve power (experienment efficiency)
+1. increase size;
+2.  use one tailed test instead of 2;
+3.  increase intensity of treatment;
+4.   average out over time;
+5.     homogenous samples ;
+6.  choose the outcome/metrics carefully (less skewed to reduce variance);
+7.   make control and experiement more comparable (improve randomization process https://drive.google.com/file/d/1GPT7HFWYo6qjYCVoq6lpOLGq2oOlDywU/view); incorperate prior information 
+
+
+
 
 
 
