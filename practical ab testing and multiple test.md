@@ -63,3 +63,16 @@ On the other hand, if we are performing explorary experiments and will have foll
 not that necessary. Also, if we are testing multple treatment against the same common treatment group, we have a reason to
 view those as independent trails, thus do not need the correction.
 
+# practical A/B test questions
+
+1. too short vs too long
+if the test is too short you will miss the seasonality; and if the ab test is too long you will run into other issues like cookie deletion
+also running it for too short of time you might encounter nolvety effect or privacy effect
+```
+Novelty describes the desire to use new technology that tends to diminish over time. Primacy describes the growing engagement with technology as a result of adoption of the innovation.
+```
+
+
+2. A/B test running only on new users?
+
+3. 
